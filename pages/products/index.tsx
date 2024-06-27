@@ -4,11 +4,10 @@ import { GetServerSideProps } from "next";
 import { fetchCategories } from "@/lib/fetchCategories";
 import { fetchProducts } from "@/lib/fetchProducts";
 import { CategoriesList } from "@/components/CategoriesList";
+import { Sort } from "@/components/Sort";
 import { ProductsGrid } from "@/components/ProductGrid";
 import styles from "../styles/products.module.css";
 import type { ProductType } from "@/types";
-
-
 
 type PageProps = {
   categories: string[];
@@ -16,10 +15,13 @@ type PageProps = {
 };
 
 const Page = ({ categories, products }: PageProps) => {
-
   return (
     <div className={styles.main}>
-      <CategoriesList categories={categories} />
+      <div className={styles.filterColumn}>
+        <h3 className={styles.filterHeading}>Filter</h3>
+        <CategoriesList categories={categories} />
+        <Sort />
+      </div>
       <ProductsGrid products={products} />
     </div>
   );
