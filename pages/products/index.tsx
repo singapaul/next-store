@@ -1,12 +1,11 @@
 import { ReactElement } from "react";
 import { BaseLayout } from "@/components/BaseLayout";
-import { NextPageWithLayout } from "./_app";
-import styles from './styles/home.module.css'
-
+import { NextPageWithLayout } from "../_app";
+import styles from '../styles/products.module.css'
 const Page: NextPageWithLayout = () => {
   return (
     <div className={styles.main}>
-      <p>Home</p>
+      <p>Products</p>
     </div>
   );
 }
