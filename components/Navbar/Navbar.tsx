@@ -15,3 +15,4 @@ export function Navbar() {
     </ul>
   );
 }
+Navbar.displayName = 'Navbar';  

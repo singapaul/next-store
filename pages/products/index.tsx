@@ -1,12 +1,12 @@
 import { ReactElement } from "react";
-import { BaseLayout } from "@/components/BaseLayout";
 import { GetServerSideProps } from "next";
 import { fetchCategories } from "@/lib/fetchCategories";
 import { fetchProducts } from "@/lib/fetchProducts";
 import { CategoriesList } from "@/components/CategoriesList";
+import { BaseLayout } from "@/components/BaseLayout";
 import { Sort } from "@/components/Sort";
 import { ProductsGrid } from "@/components/ProductGrid";
-import styles from "../styles/products.module.css";
+import styles from "./products.module.css";
 import type { ProductType } from "@/types";
 
 type PageProps = {

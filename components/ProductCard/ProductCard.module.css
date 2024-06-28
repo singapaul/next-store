@@ -1,121 +1,127 @@
 .card {
-    border-radius: 0.375rem; /* Corresponds to Tailwind's rounded class */
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    max-width: 350px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); /* Tailwind's shadow-lg */
-  }
-  
-  .imageContainer {
-    position: relative;
-    background-color: white;
-  }
-  
-  .image {
-    width: 100%;
-    max-height: 270px;
-    object-fit: scale-down;
-  }
-  
-  .overlay {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.6); /* Tailwind's bg-gray-900 with opacity-25 */
-    opacity: 0;
-    transition: opacity 0.3s ease;
-  }
-  
-  .overlay:hover {
-    opacity: 1;
-  }
-  
-  .categoryTag {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background-color: #4f46e5; /* Tailwind's bg-indigo-600 */
-    color: #ffffff; /* Tailwind's text-white */
-    padding: 0.5rem 1rem; /* Tailwind's px-4 py-2 */
-    font-size: 0.875rem; /* Tailwind's text-sm */
-    border-radius: 0.375rem; /* Corresponds to Tailwind's rounded class */
-    cursor: pointer;
-    transition: background-color 0.5s ease, color 0.5s ease;
-  }
-  
-  .categoryTag:hover {
-    background-color: #ffffff; /* Tailwind's bg-white on hover */
-    color: #4f46e5; /* Tailwind's text-indigo-600 on hover */
-  }
-  
-  .dateTag {
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-color: #4f46e5; /* Tailwind's bg-indigo-600 */
-    color: #ffffff; /* Tailwind's text-white */
-    padding: 0.5rem; /* Tailwind's px-4 py-2 */
-    font-size: 0.875rem; /* Tailwind's text-sm */
-    border-radius: 50%; /* To create a rounded button effect */
-    cursor: pointer;
-    transition: background-color 0.5s ease, color 0.5s ease;
-  }
-  
-  .dateTag:hover {
-    background-color: #ffffff; /* Tailwind's bg-white on hover */
-    color: #4f46e5; /* Tailwind's text-indigo-600 on hover */
-  }
-  
-  .title {
-    font-size: 1.25rem; /* Tailwind's text-lg */
-    font-weight: 600; /* Tailwind's font-semibold */
-    transition: color 0.5s ease;
-  }
-  
-  .title:hover {
-    color: #4f46e5; /* Tailwind's text-indigo-600 on hover */
-  }
-  
-  .description {
-    padding-top: 20px;
-    font-size: 0.875rem; /* Tailwind's text-sm */
-    color: black; /* Tailwind's text-gray-500 */
-    transition: color 0.5s ease;
-  }
-  
-  .description:hover {
-    color: #4a5568; /* Tailwind's text-gray-700 on hover */
-  }
-  
+  border-radius: 0.375rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  max-width: 350px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
 
-  .footer {
-    padding: 20px;
-    align-self: flex-start;
-    margin-top: auto;
-    display: flex;
-    align-items: center;
-    width: 100%;
-    justify-content: space-between;
-  }
+.imageContainer {
+  position: relative;
+  background-color: white;
+}
 
-  .button {
-    display: inline-block;
-    padding: 0.75rem ; /* Tailwind's px-4 py-2 */
-    font-size: 1rem; /* Tailwind's text-base */
-    font-weight: 600; /* Tailwind's font-semibold */
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    border-radius: 0.375rem; /* Tailwind's rounded */
-    background-color: #4f46e5; /* Your desired color */
-    color: #ffffff; /* Tailwind's text-white */
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
-  
-  .button:hover {
-    background-color: #5a67d8; /* Adjusted shade for hover effect */
-  }
-  
+.image {
+  width: 100%;
+  max-height: 270px;
+  object-fit: scale-down;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.overlay:hover {
+  opacity: 1;
+}
+
+.categoryTag {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #4f46e5;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.categoryTag:hover {
+  background-color: #ffffff;
+  color: #4f46e5;
+}
+
+.dateTag {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #4f46e5;
+  color: #ffffff;
+  padding: 0.5rem;
+  font-size: 0.875rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.dateTag:hover {
+  background-color: #ffffff;
+  color: #4f46e5;
+}
+
+.title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  transition: color 0.5s ease;
+}
+
+.title:hover {
+  color: #4f46e5;
+}
+
+.description {
+  padding-top: 20px;
+  font-size: 0.875rem;
+  color: black;
+  transition: color 0.5s ease;
+}
+
+.description:hover {
+  color: #4a5568;
+}
+
+.price {
+  font-weight: 600;
+}
+
+.content {
+  padding: 20px;
+}
+
+.footer {
+  padding: 20px;
+  align-self: flex-start;
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.75rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 0.375rem;
+  background-color: #4f46e5;
+  color: #ffffff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #5a67d8;
+}

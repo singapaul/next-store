@@ -1,7 +1,7 @@
 import { ReactElement } from "react";
 import { BaseLayout } from "@/components/BaseLayout";
 import { NextPageWithLayout } from "./_app";
-import styles from './styles/home.module.css'
+import styles from './home.module.css'
 
 const Page: NextPageWithLayout = () => {
   return (

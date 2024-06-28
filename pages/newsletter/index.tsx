@@ -1,8 +1,8 @@
 import { ReactElement } from "react"; 
 import { NewsletterLayout } from "@/components/NewsletterLayout";
 import { NextPageWithLayout } from "../_app";
-// @todo replace
-import styles from '../styles/products.module.css'
+import styles from './newsletter.module.css'
+
 const Page: NextPageWithLayout = () => {
   return (
     <div className={styles.main}>

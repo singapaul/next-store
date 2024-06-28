@@ -5,8 +5,8 @@ import type { ProductType } from "@/types";
 
 export const ProductCard = ({ product }: { product: ProductType }) => {
   const { category, price, image, rating, title, description } = product;
-  const { count, rate } = rating;
- 
+  const { rate } = rating;
+
   return (
     <div className={styles.card}>
       <div className={styles.imageContainer}>
@@ -16,6 +16,7 @@ export const ProductCard = ({ product }: { product: ProductType }) => {
           className={styles.image}
           src={image}
           alt={title}
+          fetchPriority="auto"
         />
         <div className={styles.overlay}></div>
         <div className={styles.categoryTag}>{category}</div>
@@ -23,14 +24,13 @@ export const ProductCard = ({ product }: { product: ProductType }) => {
           <span className="font-bold">{formatToDecimalPlace(rate, 1)}</span>
         </div>
       </div>
-      <div className="px-6 py-4">
-        <a href="#" className={styles.title}>
-          {title}
-        </a>
+      <div className={styles.content}>
+        <p className={styles.title}>
+          {title}</p>     
         <p className={styles.description}>{description}</p>
       </div>
       <div className={styles.footer}>
-        <span>{count} Reviews</span>
+        <p className={styles.price}>£{formatToDecimalPlace(price, 2)}</p>
         <button className={styles.button}>View Product</button>
       </div>
     </div>
